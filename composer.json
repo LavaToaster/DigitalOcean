@@ -1,6 +1,7 @@
 {
     "name": "lavoaster/digitalocean",
     "description": "Digital Ocean API package",
+    "license": "MIT",
     "authors": [
         {
             "name": "Adam Lavin",
