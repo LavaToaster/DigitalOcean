@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'access_token' => 'd90111c319d93a0880eddb38706ec2e73e05be0efb1ecee164c06b2f77ddfbe2',
+    'access_token' => '',
     /*
     |--------------------------------------------------------------------------
     | Digital Ocean API Url
