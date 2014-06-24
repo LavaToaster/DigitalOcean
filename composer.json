@@ -1,0 +1,21 @@
+{
+    "name": "lavoaster/digitalocean",
+    "description": "Digital Ocean API package",
+    "authors": [
+        {
+            "name": "Adam Lavin",
+            "email": "adam@lavoaster.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "guzzlehttp/guzzle": "4.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lavoaster\\DigitalOcean\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
