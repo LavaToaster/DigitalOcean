@@ -1,6 +1,6 @@
 {
     "name": "lavoaster/digitalocean",
-    "description": "Digital Ocean API package",
+    "description": "Implementation of Digital Ocean v2 API",
     "license": "MIT",
     "authors": [
         {
