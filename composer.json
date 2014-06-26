@@ -2,6 +2,8 @@
     "name": "lavoaster/digitalocean",
     "description": "Implementation of Digital Ocean v2 API",
     "license": "MIT",
+    "keywords": ["laravel", "laravel4", "api", "digitalocean"],
+    "type": "library",
     "authors": [
         {
             "name": "Adam Lavin",
