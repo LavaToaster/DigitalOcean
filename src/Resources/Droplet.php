@@ -88,4 +88,34 @@ class Droplet extends Resource
     {
         return $this->request->performAction($this->id, 'enable_ipv6');
     }
+
+    public function disableBackups()
+    {
+        return $this->request->performAction($this->id, 'disable_backups');
+    }
+
+    public function retrieveAction($id)
+    {
+        return $this->request->action($this->id, $id);
+    }
+
+    public function kernels()
+    {
+        return $this->request->kernels($this->id);
+    }
+
+    public function backups()
+    {
+        return $this->request->backups($this->id);
+    }
+
+    public function snapshots()
+    {
+        return $this->request->snapshots($this->id);
+    }
+
+    public function delete()
+    {
+        return $this->request->delete($this->id);
+    }
 }

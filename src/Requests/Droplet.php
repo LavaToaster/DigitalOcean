@@ -32,8 +32,36 @@ class Droplet extends Request
         );
     }
 
-    public function action($dropletId, $actionId)
+    public function action($id, $actionId)
     {
-        return $this->client->get('droplets/' . $dropletId . '/actions/' . $actionId);
+        return $this->client->get('droplets/' . $id . '/actions/' . $actionId);
     }
+
+    public function kernels($id)
+    {
+        return $this->client->get('droplets/' . $id . '/kernels');
+    }
+
+    public function snapshots($id)
+    {
+        return $this->client->get('droplets/' . $id . '/snapshots');
+    }
+
+    public function backups($id)
+    {
+        return $this->client->get('droplets/' . $id . '/backups');
+    }
+
+    public function create($name, $region, $size, $image, $extras = [])
+    {
+        $response = $this->client->post('droplets', compact('name', 'region', 'size', 'image') + $extras);
+
+        return new \Lavoaster\DigitalOcean\Resources\Droplet($response['droplet'], $this);
+    }
+
+    public function delete($id)
+    {
+        return $this->client->delete('droplets/' . $id);
+    }
+
 }
